@@ -1,7 +1,9 @@
 This code is an AI assistant named Sephora. It uses various libraries and APIs to perform different tasks. 
 
-The code imports necessary libraries such as webbrowser, speech_recognition, pyttsx3, pywhatkit, datetime, wikipedia, os, and openai. It also imports an API key from a config file.
+The code imports necessary libraries such as webbrowser, speech_recognition, pyttsx3, pywhatkit, datetime, wikipedia, 
+os, and openai. It also imports an API key from a config file.
 
+**ai**
 The code defines a function called "ai" that takes a prompt as input and uses the OpenAI API to generate a response based on the prompt. The response is then saved in a text file.
 
 The code defines a function called "chat" that takes a query as input and uses the OpenAI API to generate a response based on the previous conversation history. The response is then spoken out loud using the pyttsx3 library.
