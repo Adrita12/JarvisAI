@@ -4,14 +4,31 @@ The code imports necessary libraries such as webbrowser, speech_recognition, pyt
 os, and openai. It also imports an API key from a config file.
 
 ** ai function **
-The code defines a function called "ai" that takes a prompt as input and uses the OpenAI API to generate a response based on the prompt. The response is then saved in a text file.
+The code defines a function called "ai" that takes a prompt as input and uses the OpenAI API to generate a response 
+based on the prompt. The response is then saved in a text file.
 
-The code defines a function called "chat" that takes a query as input and uses the OpenAI API to generate a response based on the previous conversation history. The response is then spoken out loud using the pyttsx3 library.
+** chat function **
+The code defines a function called "chat" that takes a query as input and uses the OpenAI API to generate a response 
+based on the previous conversation history. The response is then spoken out loud using the pyttsx3 library.
 
+** talk function **
 The code defines a function called "talk" that takes text as input and uses the pyttsx3 library to speak out the text.
 
-The code defines a function called "input_instruction" that uses the speech_recognition library to listen to user's voice input and convert it into text. The text is then returned as the instruction.
+** input_instruction function **
+The code defines a function called "input_instruction" that uses the speech_recognition library to listen to user's 
+voice input and convert it into text. The text is then returned as the instruction.
 
 The code initializes the AI assistant by speaking a greeting and printing it.
 
-The code enters a while loop that continuously listens for user instructions. It checks for specific keywords in the instruction and performs corresponding actions. For example, if the instruction contains the word "youtube", it opens the YouTube website using the webbrowser library. If the instruction contains the word "time", it retrieves the current time and speaks it out. If the instruction contains the word "play", it plays a song on YouTube using the pywhatkit library. If the instruction contains the phrase "using wikipedia search", it searches for information on Wikipedia using the wikipedia library. If the instruction contains the phrase "open google chrome", it opens the Google Chrome browser using the os library. If the instruction contains the phrase "using artificial intelligence", it calls the "ai" function to generate an AI response. If the instruction contains the phrase "Sephora Quit", it exits the program. If the instruction contains the phrase "reset chat", it resets the conversation history. If none of the specific keywords are found, it calls the "chat" function to generate an AI response based on the conversation history.
+The code enters a while loop that continuously listens for user instructions. It checks for specific keywords in the 
+instruction and performs corresponding actions. For example, if the instruction contains the word "youtube", it opens
+the YouTube website using the webbrowser library. If the instruction contains the word "time", it retrieves the 
+current time and speaks it out. If the instruction contains the word "play", it plays a song on YouTube using the 
+pywhatkit library. If the instruction contains the phrase "using wikipedia search", it searches for information on
+Wikipedia using the wikipedia library. If the instruction contains the phrase "open google chrome", it opens the 
+
+Google Chrome browser using the os library. If the instruction contains the phrase "using artificial intelligence", 
+it calls the "ai" function to generate an AI response. If the instruction contains the phrase "Sephora Quit", it
+exits the program. If the instruction contains the phrase "reset chat", it resets the conversation history. If none
+of the specific keywords are found, it calls the "chat" function to generate an AI response based on the conversation
+history.
